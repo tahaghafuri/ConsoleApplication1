@@ -9,10 +9,15 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine("Enter To Echo:");
-            Console.ResetColor();
-            string str = Convert.ToString(Console.ReadLine());
+            string str="";
+            try {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("Enter To Echo:");
+                Console.ResetColor();
+                str = Convert.ToString(Console.ReadLine());
+            } catch {
+                Console.ForegroundColor = ConsoleColor.Red;
+            }
             Console.WriteLine(str);
             Console.ReadKey();
         }
