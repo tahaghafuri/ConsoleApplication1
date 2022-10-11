@@ -15,8 +15,8 @@ namespace ConsoleApplication1
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("Enter To Echo:");
                 Console.ResetColor();
-                str = Convert.ToString(Console.ReadLine());
-                str = str.ToLower();
+                str = Convert.ToString(Console.ReadLine().ToLower());
+                // str = str.ToLower();
             }
             catch(FormatException)
             {
