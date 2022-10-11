@@ -16,6 +16,7 @@ namespace ConsoleApplication1
                 Console.WriteLine("Enter To Echo:");
                 Console.ResetColor();
                 str = Convert.ToString(Console.ReadLine());
+                str = str.ToLower();
             }
             catch(FormatException)
             {
